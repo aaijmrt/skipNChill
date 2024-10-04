@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Skip Intro",
+    "version": "1.0",
+    "description": "Automatically clicks the 'Skip Intro' button when watching videos.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "tabs"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "*://*.netflix.com/*",
+          "*://*.primevideo.com/*",
+          "*://*.disneyplus.com/*"
+        ],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
