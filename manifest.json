@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Auto Skip Intro",
+    "name": "Skip 'n Chill",
     "version": "1.0",
-    "description": "Automatically clicks the 'Skip Intro' button when watching videos.",
+    "description": "Automatically clicks the 'Skip Intro' and 'Next Episode' button when watching videos.",
     "permissions": [
       "activeTab",
       "scripting",
@@ -13,7 +13,7 @@
         "matches": [
           "*://*.netflix.com/*",
           "*://*.primevideo.com/*",
-          "*://*.disneyplus.com/*"
+          "*://*.hotstar.com/*"
         ],
         "js": ["content.js"]
       }
