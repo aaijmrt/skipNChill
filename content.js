@@ -1,11 +1,11 @@
 // Function to click the "Skip Intro" button and "Next Episode" button if they exist
 function clickButtons() {
     // Netflix skip intro button
-    let netflixSkipButton = document.querySelector('span.default-ltr-cache-bf8b0m');
-    if (netflixSkipButton && netflixSkipButton.innerText === "Skip Intro") {
+    let netflixSkipButton = document.querySelector('button[data-uia="player-skip-intro"]');
+    if (netflixSkipButton) {
       netflixSkipButton.click();
     }
-  
+
     // Netflix next episode button
     let netflixNextEpisodeButton = document.querySelector('button[data-uia="next-episode-seamless-button"]');
     if (netflixNextEpisodeButton) {
@@ -19,21 +19,24 @@ function clickButtons() {
     }
   
     // Prime Video next episode button
-    let primeNextEpisodeButton = document.querySelector('button[data-uia="next-episode-seamless-button"]'); // Update this with the correct selector if necessary
+    // Note: This selector might need verification based on the actual Prime Video UI.
+    let primeNextEpisodeButton = document.querySelector('button.atvwebplayersdk-nextupcard-button');
     if (primeNextEpisodeButton) {
       primeNextEpisodeButton.click();
     }
   
-    // Disney+ skip button example
-    let disneySkipButton = document.querySelector('.skip__button');
-    if (disneySkipButton) {
-      disneySkipButton.click();
+    // Hotstar skip intro button
+    // Note: This selector might need verification based on the actual Hotstar UI.
+    let hotstarSkipButton = document.querySelector('button[data-testid="skip-intro-button"]');
+    if (hotstarSkipButton) {
+      hotstarSkipButton.click();
     }
-  
-    // Disney+ next episode button example
-    let disneyNextEpisodeButton = document.querySelector('.next__episode__button'); // Update with actual class or ID
-    if (disneyNextEpisodeButton) {
-      disneyNextEpisodeButton.click();
+
+    // Hotstar next episode button
+    // Note: This selector might need verification based on the actual Hotstar UI.
+    let hotstarNextEpisodeButton = document.querySelector('button[data-testid="next-episode-button"]');
+    if (hotstarNextEpisodeButton) {
+      hotstarNextEpisodeButton.click();
     }
   }
   
